@@ -1,0 +1,8 @@
+*********************************
+webuse reshape1, clear //load a practice dataset off the web
+list //print the data to the screen
+reshape long inc ue, i(id) j(year) 
+*reshape long inc, i(id) j(year) //this works, but gives you a weird mix
+*moves data from wide to long format
+reshape wide //once changed, it's easy to change back
+reshape long //it's also easy to change back-back.
